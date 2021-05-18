@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Артем](https://up.htmlacademy.ru/htmlcss/31/user/1803563).
-* Наставник: `Наталья Рыжова`(https://htmlacademy.ru/profile/id418965).
+* Наставник: [Наталья Рыжова](https://htmlacademy.ru/profile/id418965).
 
 ---
 
