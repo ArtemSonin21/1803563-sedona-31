@@ -8,10 +8,10 @@
 
   	<header>
   		<nav>
-  			<ul>
   				<a href="index.html">
   				<img src="https://via.placeholder.com/138x70" alt="Логотип города Седона">
   				</a>
+        <ul>
   					<li><a href="blank.html">Информация</a></li>
   					<li><a href="blank.html">Фото и видео</a></li>
   					<li><a href="blank.html">Карта штата</a></li>
@@ -22,48 +22,37 @@
   	</header>
 
     <main>
+
       <section>
-        <ul>
-          <li>
-            <h2>Инфраструктура:</h2>
-          </li>
-          <li>
+
+        <h2>Инфраструктура:</h2>
+        <form>
             <input type="checkbox" name="pool" id="pool" checked>
             <label for="pool">Бассейн</label>
-          </li>
-          <li>
+        </form>
+        <form>
             <input type="checkbox" name="parking" id="parking">
             <label for="parking">Парковка</label>
-          </li>
-          <li>
+        </form>
+        <form>
             <input type="checkbox" name="wi-fi" id="wi-fi">
             <label for="wi-fi">Wi-Fi</label>
-          </li>
-        </ul>
-      </section>
-
-
-      <section>
-        <ul>
-          <li>
-            <h2>Тип жилья:</h2>
-          </li>
-          <li>
+        </form>
+        
+        <h2>Тип жилья:</h2>
+          <form>
             <input type="checkbox" name="hotel" id="hotel" checked>
             <label for="hotel">Гостиница</label>
-          </li>
-          <li>
+          </form>
+          <form>
             <input type="checkbox" name="motel" id="motel" checked>
             <label for="motel">Мотель</label>
-          </li>
-          <li>
+          </form>
+          <form>
             <input type="checkbox" name="apartments" id="apartments" checked>
             <label for="apartments">Апартаменты</label>
-          </li>
-        </ul>
-      </section>
-
-      <section>
+          </form>
+      
           <h2>Стоимость в сутки, ₽:</h2>
           <!-- Здесь будет ползунок -->
           <button type="button">Показать</button>
@@ -71,7 +60,8 @@
 
       <section>
         <h2>Найдено: 3</h2>
-        <ul> <h3>Сортировка:</h3>
+        <h3>Сортировка:</h3>
+        <ul>
           <li>По цене</li>
           <li>По типу</li>
           <li>По рейтингу</li>
@@ -83,12 +73,13 @@
           <li>
             <a href="blank.html">
               <h2>Amara Resort & Spa</h2>
-              <img src="https://via.placeholder.com/135x90" alt="Фото гостиницы">
+            </a>
+            <a href="blank.html"><img src="https://via.placeholder.com/135x90" alt="Фото гостиницы">
             </a>
             <p>Гостиница</p>
             <p>От 4000 ₽</p>
-            <button type="button">Подробнее</button>
-            <button type="button">Забронировать</button>
+            <a href="blank.html">Подробнее</a>
+            <a href="blank.html">Забронировать</a>
           </li>
 
         </ul>
@@ -103,8 +94,8 @@
             </a>
             <p>Мотель</p>
             <p>От 3000 ₽</p>
-            <button type="button">Подробнее</button>
-            <button type="button">Забронировать</button>
+            <a href="blank.html">Подробнее</a>
+            <a href="blank.html">Забронировать</a>
           </li>
 
         </ul>
@@ -119,8 +110,8 @@
             </a>
             <p>Апартаменты</p>
             <p>От 2000 ₽</p>
-            <button type="button">Подробнее</button>
-            <button type="button">Забронировать</button>
+            <a href="blank.html">Подробнее</a>
+            <a href="blank.html">Забронировать</a>
           </li>
 
         </ul>
@@ -130,16 +121,14 @@
 
     <footer>
         <section>
-          <p>
+          <h2>Контакты</h2>
             <a href="#">#visitSEDONA</a>
-          </p>
-          <p>
             <a href="tel:+78005558628">+7 800 555-86-28</a>
-          </p>
-
+        
         </section>
 
         <section>
+          <h2>Соцсети</h2>
           <ul>
             <li>
               <a href="#">Твиттер</a>
@@ -154,6 +143,7 @@
         </section>
         
         <section>
+          <h2>HTML Academy</h2>
           <p>Website by<a><img src="https://via.placeholder.com/100x58" alt="Логотип htmlacademy"></a></p>
         </section>
     </footer>
