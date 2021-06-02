@@ -1,5 +1,19 @@
+:root {
+	--basic-black: #000;
+	--basic-white: #fff;
+	--basic-background-color: #F2F2F2;
+	--basic-blue: #81B3D2;
+	--basic-extra-blue: #669EC0;
+	--basic-dark-blue: #5496BD;
+	--basic-brown: #766357;
+	--basic-extra-brow: #604E43;
+	--basic-dark-brow: #503E33;
+}
+
+/* GLOBAL */
 .page {
 	background-color: #F2F2F2;
+	max-height: 100%;
 	margin: 0 40px;
 }
 
@@ -136,6 +150,9 @@ body {
 	font-size: 21px;
 	line-height: 26px;
 }
+.contacts a:hover {
+	color: #81B3D2;
+}
 .social {
 	list-style: none;
 }
@@ -176,4 +193,16 @@ body {
 }
 .youtube:active {
 	background: url("images/youtube-active.svg");
+}
+.footer-logo {
+	display: block;
+	width: 115px;
+	height: 33px;
+	background: url(images/logo_htmlacademy.svg);
+}
+.footer-logo:hover {
+	background: url("images/logo_htmlacademy_hover.svg");
+}
+.footer-logo:active {
+	background: url("images/logo_htmlacademy_active.svg");
 }
