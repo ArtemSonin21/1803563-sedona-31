@@ -206,3 +206,129 @@ body {
 .footer-logo:active {
 	background: url("images/logo_htmlacademy_active.svg");
 }
+
+/* PAGE TWO */
+
+/* MAIN */
+
+.header-form {
+	color: #fff;
+	background-image: url("images/background_two_page.jpg");
+	min-height: 217px;
+}
+.header-form h2 {
+	color: #fff;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 21px;
+}
+.show {
+	width: 137px;
+	height: 36px;
+	color: #fff;
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: normal;
+	text-transform: uppercase;
+	border: 2px solid #FFFFFF;
+	border-radius: 2px;
+	background: 0;
+}
+.show:hover {
+	color: #000;
+	background-color: #fff;
+}
+.sorting {
+	list-style: none;
+}
+.sorting li {
+	font-size: 12px;
+	line-height: 18px;
+	opacity: 30%;
+	cursor: pointer;
+	border-bottom: 1px dashed #81B3D2;
+}
+.sorting li:hover {
+	color: #81B3D2;
+	opacity: 1;
+}
+.sorting li:active {
+	color: #000;
+	opacity: 1;
+	border: none;
+}
+
+/* RESULT */
+
+.result {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.result li {
+	min-width: 1120px;
+	border-bottom: 1px solid #E5E5E5;
+}
+.result a {
+	text-decoration: none;
+}
+.result h2 {
+	color: #000;
+	font-weight: bold;
+	font-size: 21px;
+	line-height: 26px;
+}
+.result h2:hover {
+	color: #81B3D2;
+}
+.result h2:active {
+	color: #000;
+	opacity: 0.3;
+}
+
+/* DETAIL BUTTON */
+.detail-button {
+	display: block;
+	width: 110px;
+	height: 27px;
+	background-color: #81B3D2;
+}
+.detail-button:hover {
+	background-color: #669EC0;
+}
+.detail-button:active {
+	background-color: #5496BD;
+}
+.detail-button-text {
+	display: block;
+	color: #fff;
+	font-weight: bold;
+	padding: 3px 9px;
+}
+.detail-button-text:active {
+	opacity: 0.3;
+}
+
+/* RESERVATION BUTTON */
+.reservation-button {
+	display: block;
+	width: 142px;
+	height: 27px;
+	background-color: #766357;
+	margin-top: 10px;
+}
+.reservation-button-text {
+	display: block;
+	color: #fff;
+	font-weight: bold;
+	padding: 3px 8px;
+}
+.reservation-button:hover {
+	background-color: #604E43;
+}
+.reservation-button:active {
+	background-color: #503E33;
+}
+.reservation-button-text:active {
+	opacity: 0.3;
+}
