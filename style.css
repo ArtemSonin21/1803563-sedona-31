@@ -13,7 +13,7 @@
 /* GLOBAL */
 .page {
 	background-color: #F2F2F2;
-	min-height: 100%;
+	height: 100%;
 	margin: 0 40px;
 }
 
@@ -60,15 +60,12 @@ body {
 }
 
 /* MAIN */
-.main {
-	display: grid;
-	grid-template-columns: repeat(6, 200px);
-}
+
 .main img {
-	grid-column: 1 / -1;
+	
 }
 .about-sedona {
-	grid-column: 1 / -1;
+	
 	min-height: 216px;
 	text-align: center;
 }
@@ -80,9 +77,11 @@ body {
 	line-height: 26px;
 }
 .content {
-	grid-column: 1 / -1;
+	display: grid;
+	grid-template-columns: repeat(6, 200px);
 }
 .reason-one {
+	grid-column: 1 / -1;
 	display: flex;
 	justify-content: space-between;
 	height: 256px;
@@ -102,6 +101,7 @@ body {
 	line-height: 21px;
 }
 .facilities {
+	grid-column: 1 / -1;
 	min-height: 327px;
 	
 }
@@ -121,6 +121,7 @@ body {
 	line-height: 21px;
 }
 .reason-two {
+	grid-column: 1 / -1;
 	display: flex;
 	justify-content: space-between;
 	min-height: 256px;
@@ -140,6 +141,7 @@ body {
 	line-height: 21px;
 }
 .other-reasons {
+	grid-column: 1 / -1;
 	background-color: #EEEEEE;
 }
 .other-reasons-list {
@@ -154,7 +156,7 @@ body {
 	line-height: 21px;
 }
 .search {
-	grid-column: 1 / -1;
+	
 	min-height: 290px;
 }
 .interested {
@@ -288,22 +290,38 @@ body {
 /* MAIN */
 
 .main-two {
-	display: grid;
-	grid-template-columns: 73px 127px repeat(4, 200px) 127px 73px;
+	
 }
 .customization {
-	grid-column: 1 / -1;
+	height: 217px;
+	background-image: url("images/background_two_page.jpg");
 }
 .header-form {
+	display: grid;
+	grid-template-columns: 73px repeat(5, 200px) 73px;
+	grid-template-rows: repeat(4, 1fr);
 	color: #fff;
-	background-image: url("images/background_two_page.jpg");
-	min-height: 217px;
+	
 }
 .header-form h2 {
 	color: #fff;
 	font-weight: bold;
 	font-size: 16px;
 	line-height: 21px;
+}
+.first-form {
+	grid-column: 2 / 3;
+	grid-row: 1 / 5;
+
+}
+.second-form {
+	grid-column: 3 /4;
+	
+}
+.final {
+	grid-column: 6 / -1;
+	align-self: center;
+
 }
 .show {
 	width: 137px;
@@ -322,19 +340,20 @@ body {
 	background-color: #fff;
 }
 .sorting-items {
-	grid-column: 2 / 5;
+	display: grid;
+	grid-template-columns: 73px repeat(5, 200px) 73px;
 	height: 86px;
+	border-bottom: 1px solid #E5E5E5;
 	
 }
 .items {
+	grid-column: 2 / -1;
 	display: flex;
 	align-items: center;
-	border-bottom: 1px solid #E5E5E5;
 }
 .sorting {
 	display: flex;
 	list-style: none;
-
 }
 .sorting li {
 	font-size: 12px;
@@ -354,16 +373,20 @@ body {
 }
 
 /* RESULT */
-.result-list {
-	grid-column: 2 / -1;
+.result-list{
+	
+	
 }
 .result {
+	display: grid;
+	grid-template-columns: 73px repeat(8, 1fr) 73px;
+	grid-template-rows: repeat(12, 37px);
 	margin: 0;
 	padding: 0;
 	list-style: none;
 }
 .result li {
-	min-width: 1120px;
+	width: 1120px;
 	border-bottom: 1px solid #E5E5E5;
 }
 .result a {
@@ -382,10 +405,51 @@ body {
 	color: #000;
 	opacity: 0.3;
 }
-
+.result-one {
+	grid-column: 2 / -1;
+	grid-row: 1;
+	display: grid;
+	grid-template-columns: 73px repeat(8, 100px) 73px;
+	grid-template-rows: repeat(3, 30px);
+	grid-gap: 10px;
+	
+	
+}
+.result-one-price {
+	
+}
+.result-one img {
+	
+}
+.result-one h2 {
+	
+}
+.result-two {
+	grid-column: 2 / -1;
+	grid-row: 2;
+	display: grid;
+	grid-template-columns: 73px repeat(8, 100px) 73px;
+	grid-template-rows: repeat(3, 30px);
+	
+	
+	
+}
+.result-three {
+	grid-column: 2 / -1;
+	grid-row: 3;
+	display: grid;
+	grid-template-columns: 73px repeat(8, 100px) 73px;
+	grid-template-rows: repeat(3, 30px);
+	
+	
+	
+}
 
 /* DETAIL BUTTON */
 .detail-button {
+	grid-column: 3 / 4;
+	grid-row: 3;
+	justify-self: center;
 	display: block;
 	width: 110px;
 	height: 27px;
@@ -409,6 +473,9 @@ body {
 
 /* RESERVATION BUTTON */
 .reservation-button {
+	grid-column: 4 / 5;
+	grid-row: 3;
+	justify-self: center;
 	display: block;
 	width: 142px;
 	height: 27px;

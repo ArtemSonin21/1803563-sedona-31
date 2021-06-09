@@ -27,37 +27,39 @@
 
       <section class="customization">
           
-      <div class="header-form">
-        <form>
-        <h2>Инфраструктура:</h2>
-        
-            <input type="checkbox" name="pool" id="pool" checked>
-            <label for="pool">Бассейн</label>
-        
-            <input type="checkbox" name="parking" id="parking">
-            <label for="parking">Парковка</label>
-        
-            <input type="checkbox" name="wi-fi" id="wi-fi">
-            <label for="wi-fi">Wi-Fi</label>
-        
-        
-        <h2>Тип жилья:</h2>
-          
-            <input type="checkbox" name="hotel" id="hotel" checked>
-            <label for="hotel">Гостиница</label>
-          
-            <input type="checkbox" name="motel" id="motel" checked>
-            <label for="motel">Мотель</label>
-          
-            <input type="checkbox" name="apartments" id="apartments" checked>
-            <label for="apartments">Апартаменты</label>
-          
       
+        <form class="header-form">
+          <div class="first-form">
+            <h2>Инфраструктура:</h2>
+            
+                <input type="checkbox" name="pool" id="pool" checked>
+                <label for="pool">Бассейн</label>
+            
+                <input type="checkbox" name="parking" id="parking">
+                <label for="parking">Парковка</label>
+            
+                <input type="checkbox" name="wi-fi" id="wi-fi">
+                <label for="wi-fi">Wi-Fi</label>
+          </div>
+          <div class="second-form">
+            <h2>Тип жилья:</h2>
+              
+                <input type="checkbox" name="hotel" id="hotel" checked>
+                <label for="hotel">Гостиница</label>
+              
+                <input type="checkbox" name="motel" id="motel" checked>
+                <label for="motel">Мотель</label>
+              
+                <input type="checkbox" name="apartments" id="apartments" checked>
+                <label for="apartments">Апартаменты</label>
+          </div>
+          <div class="final">
           <h2>Стоимость в сутки, ₽:</h2>
           <!-- Здесь будет ползунок -->
           <button class="show" type="button">Показать</button>
+          </div>
         </form>
-      </div>
+      
       </section>
 
       <section class="sorting-items">
@@ -78,10 +80,14 @@
             
             <a href="blank.html">
               <img src="images/hotel.jpg" width="135" height="90" alt="Фото гостиницы">
+            </a>
+            <a href="blank.html">
               <h2>Amara Resort & Spa</h2>
             </a>
+            <div class="result-one-price">
             <p>Гостиница</p>
             <p>От 4000 ₽</p>
+            </div>
             <div class="detail-button">
               <a class="detail-button-text" href="blank.html">Подробнее</a>
             </div>
@@ -90,7 +96,7 @@
             </div>
           </li>
 
-          <li>
+          <li class="result-two">
             
             <a href="blank.html">
               <h2>Desert Quail Inn</h2>
@@ -106,7 +112,7 @@
             </div>
           </li>
 
-          <li>
+          <li class="result-three">
 
             <a href="blank.html">
               <h2>Villas at Poco Diablo</h2>
