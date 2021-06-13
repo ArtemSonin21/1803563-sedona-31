@@ -53,7 +53,7 @@ body {
 }
 .site-navigation {
 	display: flex;
-	justify-content: space-between;
+	justify-content:space-between;
 	flex-direction: row;
 	list-style: none;
 	margin: 0;
@@ -71,7 +71,12 @@ body {
 	color: #000;
 	opacity: 30%; 
 }
-
+.left {
+	margin-right: 115px;
+}
+.right {
+	margin-left: 135px;
+}
 /* MAIN */
 
 .about-sedona {
@@ -101,7 +106,7 @@ body {
 }
 .reason-one-text {
 	text-align: center;
-	margin: auto 25px;
+	margin: auto;
 
 }
 .reason-one h2 {
@@ -126,6 +131,7 @@ body {
 	padding-top: 60px;
 }
 .facilities-list li {
+	
 
 }
 .facilities-list h2 {
@@ -247,11 +253,11 @@ body {
 	font-weight: bold;
 	font-size: 14px;
 	line-height: 26px;
-	padding-right: 5px;
+	padding-right: 25px;
 	
 }
 .form-wrap input {
-	width: 346px;
+	width: 326px;
 	height: 38px;
 	font-family: inherit;
 	font-style: normal;
@@ -271,6 +277,7 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+
 }
 
 .form-wrap input[type="number"] {
@@ -278,8 +285,8 @@ body {
 	height: 38px;
 	padding: 0;
 	text-align: center;
-
 }
+
 .end-button-form {
 	grid-column: 1 / -1;
 	grid-row: 5;
