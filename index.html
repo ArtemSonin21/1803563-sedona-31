@@ -2,7 +2,8 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" href="favicon.ico">
     <title>HTML Academy: Седона</title>
   </head>
@@ -10,12 +11,13 @@
 
     <header>
       <nav class="main-navigation">
-          
+        <div class="header-logo">
+          <img src="images/logo.svg" width="138" height="70" alt="Логотип города Седона">
+        </div>
         <ul class="site-navigation">
           
             <li><a href="blank.html">Информация</a></li>
             <li><a href="blank.html">Фото и видео</a></li>
-            <li><img src="images/logo.svg" width="138" height="70" alt="Логотип города Седона"></li>
             <li><a href="blank.html">Карта штата</a></li>
             <li><a href="catalog.html">Гостиницы</a></li>
           
@@ -110,17 +112,22 @@
           <img src="images/map.png" width="1200" height="593" alt="Карта">
             <div class="form-serch">
               <form class="form-wrap" action="/" method="post" name="search">
+                <div>
                 <label for="check-in">Дата заезда:</label>
-                <input type="date" name="check-in" value="2021-05-01">
+                <input type="text" name="check-in" placeholder="24 апреля 2017">
+                </div>
+                <div>
                 <label for="check-out">Дата выезда:</label>
-                <input type="date" name="check-out" value="2021-08-01">
-
-                <label class="adults" for="adults">Взрослые</label>
+                <input type="text" name="check-out" placeholder="4 июля 2017">
+                </div>
+                <div class="adult-children">
+                <label class="adults" for="adults">Взрослые:</label>
                 <input type="number" name="adults" value="2">
-                <label class="children" for="children">Дети</label>
+                <label class="children" for="children">Дети:</label>
                 <input type="number" name="children" value="0">
-
-                <a class="end-button-form" href="blank.html">Найти</a>
+                </div>
+                <button class="end-button-form" type="submit" formaction="https://echo.htmlacademy.ru/">Найти</button>
+                
               </form>
             
           </div>
