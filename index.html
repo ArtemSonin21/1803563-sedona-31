@@ -32,11 +32,13 @@
         <img src="images/Background.jpg" width="1200" height="510" alt="Фото шапки">
         
       <section class="about-sedona">
+        <h2 class="visually-hidden">О Седоне</h2>
         <h2>Седона — небольшой городок в Аризоне, <br> заслуживающий большего!</h2>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       </section>
       
       <section class="content">
+        <h2 class="visually-hidden">Преимущества Седоны</h2>
         <div class="reason-one">
           <div class="reason-one-text">
             <h2>Настоящий <br> городок</h2>
@@ -102,6 +104,7 @@
     </section>
 
       <section class="search">
+        <h2 class="visually-hidden">Выбор даты</h2>
         <div class="interested">
           <h2>Заинтересовались?</h2>
           <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
@@ -114,21 +117,32 @@
           <img src="images/map.png" width="1200" height="593" alt="Карта">
             <div class="form-serch">
               <form class="form-wrap" action="/" method="post" name="search">
-                <div>
+                <div class="check-in-date">
                 <label for="check-in">Дата заезда:</label>
                 <input type="text" name="check-in" placeholder="24 апреля 2017">
+                  <button class="claendar-one" type="button"></button>
                 </div>
-                <div>
+
+                <div class="check-out-date">
                 <label for="check-out">Дата выезда:</label>
                 <input type="text" name="check-out" placeholder="4 июля 2017">
+                  <button class="claendar-two" type="button"></button>
                 </div>
+
                 <div class="adult-children">
                 <label class="adults" for="adults">Взрослые:</label>
-                <input type="number" name="adults" value="2">
+                <input type="number" name="adults" id="adults" value="2">
+                  <div class="input-button">
+                    <button class="minus" type="button"></button>
+                    <button class="plus" type="button"></button>
+                  </div>
 
                 <label class="children" for="children">Дети:</label>
-                <input type="number" name="children" value="0">
-                
+                <input type="number" name="children" id="children" value="0">
+                  <div class="input-button button-two">
+                    <button class="minus" type="button"></button>
+                    <button class="plus" type="button"></button>
+                  </div>
                 </div>
                 <button class="end-button-form" type="submit" formaction="https://echo.htmlacademy.ru/">Найти</button>
                 
@@ -141,6 +155,7 @@
 
   <footer class="footer">
     <section class="contact-information">
+      <h2 class="visually-hidden">Контакты</h2>
       <div class="contacts">
       
           <a href="#">#visitSEDONA</a>
