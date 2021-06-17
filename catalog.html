@@ -34,31 +34,52 @@
           <div class="first-form">
             <h2>Инфраструктура:</h2>
             
-                <input type="checkbox" name="pool" id="pool" checked>
+                <input class="visually-hidden filter-input-chekbox" type="checkbox" name="pool" id="pool" checked>
                 <label for="pool">Бассейн</label>
             
-                <input type="checkbox" name="parking" id="parking">
+                <input class="visually-hidden filter-input-chekbox" type="checkbox" name="parking" id="parking">
                 <label for="parking">Парковка</label>
             
-                <input type="checkbox" name="wi-fi" id="wi-fi">
+                <input class="visually-hidden filter-input-chekbox" type="checkbox" name="wi-fi" id="wi-fi">
                 <label for="wi-fi">Wi-Fi</label>
           </div>
           <div class="second-form">
             <h2>Тип жилья:</h2>
               
-                <input type="checkbox" name="hotel" id="hotel" checked>
+                <input class="visually-hidden filter-input-chekbox" type="checkbox" name="hotel" id="hotel" checked>
                 <label for="hotel">Гостиница</label>
               
-                <input type="checkbox" name="motel" id="motel" checked>
+                <input class="visually-hidden filter-input-chekbox" type="checkbox" name="motel" id="motel" checked>
                 <label for="motel">Мотель</label>
               
-                <input type="checkbox" name="apartments" id="apartments" checked>
+                <input class="visually-hidden filter-input-chekbox" type="checkbox" name="apartments" id="apartments" checked>
                 <label for="apartments">Апартаменты</label>
           </div>
           <div class="final">
-          <h2>Стоимость в сутки, ₽:</h2>
-          <input type="range" name="range-price" min="0" max="4000">
-          <button class="show" type="button">Показать</button>
+            <fieldset class="price-range">
+              <legend>Стоимость в сутки, ₽:</legend>
+              <div class="price-controls">
+                <label>от<input type="number" name="min-price-slider" value="0">
+                </label>
+                <div class="demarcation-line"></div>
+                <label>до<input type="number" name="max-price-slider" value="4000">
+                </label>
+              </div>
+
+              <div>
+                  <div class="range-controls">
+                    <div class="scale">
+                      <div class="bar">
+                        <div class="toggle toggle-min"></div>
+                        <div class="toggle toggle-max"></div>
+                      </div>
+                    </div>
+                    
+                  </div>
+              </div>
+          
+              <button class="show" type="button">Показать</button>
+            </fieldset>
           </div>
         </form>
       
@@ -76,8 +97,8 @@
             <li>По рейтингу</li>
         </ul>
         <div class="up-and-down">
-          <img src="images/icon-up.svg" width="11" height="10" alt="Иконка вверх">
-          <img src="images/icon-down.svg" width="11" height="10" alt="Иконка вниз">
+          <img class="image-up" src="images/icon-up.svg" width="11" height="10" alt="Иконка вверх">
+          <img class="image-down" src="images/icon-down.svg" width="11" height="10" alt="Иконка вниз">
         </div>
       </section>
 

@@ -241,6 +241,7 @@ body {
 }
 .map {
 	position: relative;
+	height: 474px;
 }
 .form-serch {
 	position: absolute;
@@ -367,6 +368,20 @@ body {
 	text-align: center;
 	background: #F2F2F2;
 }
+
+/* INPUT ARROWS */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none; 
+}
+
+input[type='number'],
+input[type="number"]:hover,
+input[type="number"]:focus {
+    appearance: none;
+    -moz-appearance: textfield;
+}
+
 .input-button {
 	position: absolute;
 	width: 94px;
@@ -444,7 +459,10 @@ body {
 
 /* FOOTER */
 .footer {
+	z-index: 10;
+	width: 1200px;
 	height: 120px;
+	background-color: #fff;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	align-items: center;	
@@ -573,30 +591,149 @@ body {
 	font-weight: bold;
 	font-size: 16px;
 	line-height: 21px;
+	margin-bottom: 26px;
 }
 .first-form {
 	grid-column: 2 / 3;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-	
+	margin-top: 15px;
+}
+.first-form label {
+	position: relative;
+	display: block;
+	cursor: pointer;
+	padding-left: 40px;
+	margin-bottom: 21px;
 
+}
+.filter-input-chekbox + label:before {
+	content: "";
+	position: absolute;
+	top: -2px;
+	left: 0;
+	width: 19px;
+	height: 19px;
+	border: 2px solid #fff;
+	border-radius: 3px;
+}
+.filter-input-chekbox:checked + label:before {
+	content: "";
+	position: absolute;
+	top: -2px;
+	left: 0;
+	width: 23px;
+	height: 23px;
+	border: none;
+	background: url("images/checkbox-on.svg")no-repeat;
 }
 .second-form {
 	grid-column: 3 /4;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
+	margin-top: 15px;
 	
+}
+.second-form label {
+	position: relative;
+	display: block;
+	cursor: pointer;
+	padding-left: 40px;
+	margin-bottom: 21px;
 }
 .final {
-	grid-column: 4 / 5;
+	grid-column: 4 / 5;	
+}
+
+.price-range {
 	display: flex;
 	flex-direction: column;
+	justify-content: flex-start;
+	margin: 0;
+	padding: 0;
+	border: none;
+	margin-top: 25px;
+}
+.price-range legend {
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 21px;
+	padding: 0;
+}
+.range-controls {
+	position: relative;
+	width: 316px;
+	height: 20px;
+    padding-top: 9px;
+}
+.range-controls .scale {
+	height: 2px;
+	background-color: #808080;
 	
 }
-.final button {
-	align-self: center;
+.range-controls .bar {
+	width: 80%;
+	height: 2px;
+	background: #fff;
+}
+.range-controls .toggle {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 4px;
+	height: 4px;
+	padding: 0;
+	background: #ABABAB;
+	border: 8px solid #fff;
+	border-radius: 50%;
+	box-shadow: 0 2px  #ABABAB;
+	cursor: pointer;
+}
+
+.range-controls .toggle-max {
+	left: 252px;
+}
+.toggle-min:hover {
+	top: 2px;
+	border: 11.5px solid #fff;
+}
+.toggle-max:hover {
+	border: 11.5px solid #fff;
+}
+.price-controls {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 316px;
+	height: 36px;
+	border: 2px solid #FFFFFF;
+	border-radius: 2px;
+	background: 0;
+	margin-top: 10px;
+	margin-bottom: 10px;
+
+}
+.price-controls label {
+	padding: 0 45px;
+}
+.price-controls input {
+	width: 36px;
+	font-family: inherit;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 21px;
+	color: #fff;
+	border: 0;
+	background: 0;
+	padding-left: 4px;
+}
+.demarcation-line {
+	height: 22px;
+	border: 1px solid #fff;
+	background: #fff;
 }
 .show {
 	width: 137px;
@@ -609,6 +746,8 @@ body {
 	border: 2px solid #FFFFFF;
 	border-radius: 2px;
 	background: 0;
+	align-self: center;
+	margin-top: 10px;
 }
 .show:hover {
 	color: #000;
@@ -655,6 +794,8 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	cursor: pointer;
+
 }
 
 /* RESULT */
