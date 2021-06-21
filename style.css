@@ -134,6 +134,7 @@ body {
 }
 .facilities-list {
 	display: flex;
+	flex-wrap: wrap;
 	flex-direction: row;
 	justify-content: space-between;
 	text-align: center;
@@ -182,6 +183,7 @@ body {
 }
 .other-reasons-list {
 	display: flex;
+	flex-wrap: wrap;
 	flex-direction: row;
 	justify-content: space-between;
 	list-style: none;
@@ -190,10 +192,20 @@ body {
 	margin: 0;
 	padding: 50px 0;
 }
-.other-reasons-list li {
+.other-reasons-list li:nth-child(1) {
 	margin-left: 94px;
     padding: 0;
     margin-right: 68px;
+ }
+ .other-reasons-list li:nth-child(2) {
+	margin-left: 92px;
+    padding: 0;
+    margin-right: 65px;
+ }
+ .other-reasons-list li:nth-child(3) {
+	margin-left: 74px;
+    padding: 0;
+    margin-right: 77px;
  }
 .other-reasons-list h2 {
 	font-weight: bold;
@@ -392,7 +404,7 @@ input[type="number"]:focus {
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	left: 175px;
+	left: 177px;
 }
 .input-button.button-two {
 	position: absolute;
@@ -404,7 +416,7 @@ input[type="number"]:focus {
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	left: 409px;
+	left: 410px;
 }
 .input-button button {
 	width: 12px;
