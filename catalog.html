@@ -30,8 +30,8 @@
 
       <section class="customization">
           
-        <form class="header-form">
-          <div class="first-form">
+        <form class="header-form" action="https://echo.htmlacademy.ru/">
+          <fieldset class="first-form">
             <h2>Инфраструктура:</h2>
             
                 <input class="visually-hidden filter-input-chekbox" type="checkbox" name="pool" id="pool" checked>
@@ -42,8 +42,8 @@
             
                 <input class="visually-hidden filter-input-chekbox" type="checkbox" name="wi-fi" id="wi-fi">
                 <label for="wi-fi">Wi-Fi</label>
-          </div>
-          <div class="second-form">
+          </fieldset>
+          <fieldset class="second-form">
             <h2>Тип жилья:</h2>
               
                 <input class="visually-hidden filter-input-chekbox" type="checkbox" name="hotel" id="hotel" checked>
@@ -54,7 +54,7 @@
               
                 <input class="visually-hidden filter-input-chekbox" type="checkbox" name="apartments" id="apartments" checked>
                 <label for="apartments">Апартаменты</label>
-          </div>
+          </fieldset>
           <div class="final">
             <fieldset class="price-range">
               <legend>Стоимость в сутки, ₽:</legend>
@@ -77,9 +77,8 @@
                     
                   </div>
               </div>
-          
-              <button class="show" type="button">Показать</button>
             </fieldset>
+            <button class="show" type="submit">Показать</button>
           </div>
         </form>
       
@@ -92,13 +91,13 @@
         </div>
 
         <ul class="sorting">
-            <li>По цене</li>
-            <li>По типу</li>
-            <li>По рейтингу</li>
+            <li><a href="blank.html">По цене</a></li>
+            <li><a href="blank.html">По типу</a></li>
+            <li><a href="blank.html">По рейтингу</a></li>
         </ul>
         <div class="up-and-down">
-          <img class="image-up" src="images/icon-up.svg" width="11" height="10" alt="Иконка вверх">
-          <img class="image-down" src="images/icon-down.svg" width="11" height="10" alt="Иконка вниз">
+          <a class="image-up" href="blank.html"></a>
+          <a class="image-down" href="blank.html"></a>
         </div>
       </section>
 
@@ -156,7 +155,7 @@
             </div>
 
             <div class="result-rating">
-                <img src="images/three-stars.svg" width="91" height="17" alt="четыре звезды">
+                <img class="stars-two" src="images/three-stars.svg" width="91" height="17" alt="четыре звезды">
                 <p class="rating">Рейтинг: 8,9</p>
             </div>
 
@@ -185,7 +184,7 @@
             </div>
 
               <div class="result-rating">
-                <img src="images/two-stars.svg" width="91" height="17" alt="четыре звезды">
+                <img class="stars-three" src="images/two-stars.svg" width="91" height="17" alt="две звезды">
                 <p class="rating">Рейтинг: 9,2</p>
             </div>
 
@@ -198,6 +197,7 @@
 
     <footer class="footer">
     <section class="contact-information">
+      <h2 class="visually-hidden">Контакты</h2>
       <div class="contacts">
       
           <a href="#">#visitSEDONA</a>
@@ -207,7 +207,7 @@
     </section>
 
     <section class="social-networks">
-      
+      <h2 class="visually-hidden">Наши соц-сети</h2>
       <ul class="social">
         <li>
           <a class="twitt" href="#"></a>
@@ -222,7 +222,7 @@
     </section>
     
     <section class="academy">
-      
+      <h2 class="visually-hidden">Проект HTML Academy</h2>
       <p>Website by</p>
       <a class="footer-logo" href="#"></a>
     </section>
