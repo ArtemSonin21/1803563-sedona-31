@@ -135,7 +135,7 @@ body {
 }
 .facilities {
 	grid-column: 1 / -1;
-	min-height: 333px;
+	min-height: 330px;
 	
 }
 .facilities-list {
@@ -206,7 +206,7 @@ body {
 	padding: 40px 0;
 }
 .other-reasons-list li {
-	padding: 0 67px 0 61px;	
+	padding: 0 47px 0 54px;	
  }
 
 .other-reasons-list h2 {
@@ -214,23 +214,27 @@ body {
 	font-weight: bold;
 	font-size: 21px;
 	line-height: 21px;
-	margin-top: 0;
 	padding-bottom: 20px;
-	padding-top: 2px;
-	
+	padding-top: 4px;
+	margin: 0;
+}
+.other-reasons-list p {
+	width: 278px;
+    padding: 10px;
+    margin: 0;
 }
 .search {
 	min-height: 290px;
 }
 .interested {
 	text-align: center;
-	padding-top: 12px;
+	padding-top: 21px;
 }
 .interested h2 {
 	font-weight: 700;
 	font-size: 30px;
 	line-height: 24px;
-	padding: 12px 0 9px 0;
+	padding: 8px 0 8px 0;
 }
 .button {
 	width: 568px;
@@ -355,7 +359,7 @@ body {
 	height: 23px;
 	background: url("images/calendar.svg") no-repeat;
 	right: 65px;
-	top: 57px;
+	top: 62px;
 	border: none;
 	padding: 0;
 	cursor: pointer;
@@ -366,7 +370,7 @@ body {
 	height: 23px;
 	background: url("images/calendar.svg") no-repeat;
 	right: 65px;
-	top: 119px;
+	top: 131px;
 	border: none;
 	padding: 0;
 	cursor: pointer;
