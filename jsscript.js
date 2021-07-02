@@ -12,13 +12,11 @@ button.addEventListener("click", function (evt) {
 	console.log("клик по кнопке убрать окно");
 });
 
-form.addEventListener("submit", function () {
+form.addEventListener("submit", function (evt) {
 	if (!checkInDate.value || !checkOutDate.value) {
-		
-		popup.classList.add("modal-error");
+		evt.preventDefault();
+		popup.classList.toggle("modal-error");
 		console.log("нужно ввести даты поездки");
 
 	}
 });
-
-
