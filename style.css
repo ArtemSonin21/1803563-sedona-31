@@ -259,6 +259,7 @@ body {
 	color: #fff;
 	text-decoration: none;
 	padding: 30px;
+
 }
 .button-serch:active {
 	opacity: 30%;
@@ -280,8 +281,16 @@ body {
 	margin: 0 auto;
 	padding: 0;
 	box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
-	
+	opacity: 1;
+	transition: all 0.5s ease 0s;
 
+}
+.form-serch-animation {
+	display: block;
+	visibility: hidden;
+	opacity: 0;
+	transform: translate(0px, 25px);
+	transition: all 0.5s ease 0s;
 }
 .form-wrap {
 	/*display: grid;

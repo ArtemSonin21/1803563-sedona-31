@@ -8,7 +8,8 @@ const checkOutDate = popup.querySelector("[name=check-out]");
 
 button.addEventListener("click", function (evt) {
 	evt.preventDefault();
-	popup.classList.toggle("visually-hidden");
+	popup.classList.toggle("form-serch-animation");
+	
 	console.log("клик по кнопке убрать окно");
 });
 
