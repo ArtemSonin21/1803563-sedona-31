@@ -2,7 +2,8 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="stylemini.css">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" href="favicon.ico">
     <title>HTML Academy: Седона</title>
@@ -20,7 +21,7 @@
             <li class="left"><a href="blank.html">Фото и видео</a></li>
           
             <li class="right"><a href="blank.html">Карта штата</a></li>
-            <li><a href="blank.html">Гостиницы</a></li>
+            <li><a href="blank.html" style="color: #766357;">Гостиницы</a></li>
           
         </ul>
       </nav>
@@ -33,13 +34,13 @@
         <form class="header-form" action="https://echo.htmlacademy.ru/">
           <fieldset class="first-form">
             <h2>Инфраструктура:</h2>
-            
+              
                 <input class="visually-hidden filter-input-chekbox" type="checkbox" name="pool" id="pool" checked>
                 <label for="pool">Бассейн</label>
-            
-                <input class="visually-hidden filter-input-chekbox" type="checkbox" name="parking" id="parking">
+                
+                <input class="visually-hidden filter-input-chekbox" type="checkbox" name="parking" id="parking" disabled>
                 <label for="parking">Парковка</label>
-            
+                
                 <input class="visually-hidden filter-input-chekbox" type="checkbox" name="wi-fi" id="wi-fi">
                 <label for="wi-fi">Wi-Fi</label>
                 
@@ -92,7 +93,7 @@
         </div>
 
         <ul class="sorting">
-            <li><a href="blank.html">По цене</a></li>
+            <li><a href="blank.html" style="color: #81B3D2; border: 0;">По цене</a></li>
             <li><a href="blank.html">По типу</a></li>
             <li><a href="blank.html">По рейтингу</a></li>
         </ul>
@@ -202,7 +203,7 @@
       <div class="contacts">
       
           <a href="#">#visitSEDONA</a>
-          <a aria-label="Наш телефон" href="tel:+78005558628">+7 800 555-86-28</a>
+          <a href="tel:+78005558628">+7 800 555-86-28</a>
 
       </div>
     </section>
@@ -211,21 +212,21 @@
       <h2 class="visually-hidden">Наши соц-сети</h2>
       <ul class="social">
         <li>
-          <a aria-label="Мы в twitt" class="twitt" href="#"></a>
+          <a class="twitt" href="#"></a>
         </li>
         <li>
-          <a aria-label="Мы в facebook" class="facebook" href="#"></a>
+          <a class="facebook" href="#"></a>
         </li>
         <li>
-          <a aria-label="Мы в youtube" class="youtube" href="#"></a>
+          <a class="youtube" href="#"></a>
         </li>
       </ul>
     </section>
     
     <section class="academy">
-      <h2 class="visually-hidden">Проект создан HTML Academy</h2>
+      <h2 class="visually-hidden">Проект HTML Academy</h2>
       <p>Website by</p>
-      <a class="footer-logo" href="#"></a>
+      <a class="footer-logo" href="https://htmlacademy.ru/intensive/htmlcss"></a>
     </section>
   </footer>
 

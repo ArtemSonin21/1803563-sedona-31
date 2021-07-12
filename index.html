@@ -2,7 +2,8 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="stylemini.css">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" href="favicon.ico">
     <title>HTML Academy: Седона</title>
@@ -22,15 +23,16 @@
           
             <li class="right"><a href="blank.html">Карта штата</a></li>
             <li><a href="catalog.html">Гостиницы</a></li>
-          
         </ul>
       </nav>
     </header>
 
     <main class="main">
-  
-        <img src="images/Background.jpg" width="1200" height="510" alt="Добро пожаловать в Седону">
-        
+      <div class="welcome">
+        <img class="shape" src="images/shape.svg">
+        <img class="lattering" src="images/lattering.svg">
+      </div>
+
       <section class="about-sedona">
         <h2 class="visually-hidden">О Седоне</h2>
         <h2>Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
@@ -58,7 +60,7 @@
             <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
           </li>
           <li>
-            <img src="images/burger.png" width="75" height="72" alt="Еда">
+            <img src="images/foot.png" width="75" height="72" alt="Еда">
             <h2>Еда</h2>
             <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </li>
@@ -99,6 +101,7 @@
             <p>— №5 —</p>
             <p>Большинство едет в гранд каньон и толпится там</p>
           </li>
+
         </ul>
       </div>
     </section>
@@ -118,15 +121,15 @@
             <div class="form-serch">
               <form class="form-wrap" action="/" method="post" name="search">
                 <div class="check-in-date">
-                <label>Дата заезда:</label>
-                <input type="text" name="check-in" placeholder="24 апреля 2017">
-                  <button class="claendar-one" type="button"></button>
+                <label for="check-in">Дата заезда:</label>
+                <input type="text" name="check-in" id="check-in" placeholder="24 апреля 2017">
+                  <button class="claendar-one" type="button" aria-label="Выбор даты заезда"></button>
                 </div>
 
                 <div class="check-out-date">
-                <label>Дата выезда:</label>
-                <input type="text" name="check-out" placeholder="4 июля 2017">
-                  <button class="claendar-two" type="button"></button>
+                <label for="check-out">Дата выезда:</label>
+                <input type="text" name="check-out" id="check-out" placeholder="4 июля 2017">
+                  <button class="claendar-two" type="button" aria-label="Выбор даты выезда"></button>
                 </div>
 
                 <div class="adult-children">
@@ -144,7 +147,7 @@
                     <button aria-label="Прибавить" class="plus" type="button"></button>
                   </div>
                 </div>
-                <button class="end-button-form" type="submit" formaction="https://echo.htmlacademy.ru/">Найти</button>
+                <button class="end-button-form"type="submit" formaction="https://echo.htmlacademy.ru/">Найти</button>
                 
               </form>
             
@@ -182,11 +185,11 @@
     <section class="academy">
       <h2 class="visually-hidden">Проект создан HTML Academy</h2>
       <p>Website by</p>
-      <a aria-label="Посетить сайт HTML Academy" class="footer-logo" href="#"></a>
+      <a aria-label="Посетить сайт HTML Academy" class="footer-logo" href="https://htmlacademy.ru/intensive/htmlcss"></a>
     </section>
   </footer>
 
-    <script src="jsscript.js"></script>
+    <script src="js/jsscriptmini.js"></script>
 
   </body>
 </html>
