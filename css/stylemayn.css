@@ -11,6 +11,7 @@
 	--basic-dark-brow: #503E33;
 	--basic-border-input: #E5E5E5;
 	--basic-dark-input: #EBEBEB;
+	--background-color-map: #D8E4BE;
 	--box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
 }
 
@@ -36,7 +37,7 @@ body {
 	line-height: 21px;
 	font-weight: normal;
 	text-transform: uppercase;
-	background-color: #FFFFFF;
+	background-color: #fff;
 	box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
 }
 .visually-hidden {
@@ -78,13 +79,20 @@ body {
 }
 .site-navigation {
 	display: flex;
-	justify-content:space-between;
+	justify-content:space-around;
 	flex-wrap: wrap;
 	list-style: none;
 	margin: 0;
-	padding: 15px 70px;
+	padding: 15px 68px;
+	gap: 128px;
+	row-gap: normal;
 }
-
+.site-navigation li:nth-chlid(1) {
+	text-align: left;
+}
+.site-navigation li:nth-chlid(4) {
+	text-align: right;
+}
 .site-navigation a {
 	padding: 5px 5px;
 	text-decoration: none;
@@ -102,18 +110,18 @@ body {
 }
 .left {
 	text-align: left;
-	margin-right: 135px;
+	margin-right: 80px;
 }
 .right {
 	text-align: right;
-	margin-left: 145px;
+	margin-left: 203px;
 }
 /* MAIN */
 .welcome {
 	position: relative;
 	width: 1200px;
 	height: 510px;
-	background: url("images/background.jpg") no-repeat #6994C0;
+	background: url("../images/background.jpg") no-repeat #6994C0;
 }
 .shape {
 	position: absolute;
@@ -297,7 +305,7 @@ body {
 .map {
 	position: relative;
 	height: 474px;
-	background: url(images/map.png) no-repeat;
+	background: url(images/map.png) no-repeat #D8E4BE;
 }
 
 .form-serch {
@@ -405,7 +413,7 @@ body {
 	background-color: #EBEBEB;
 }
 .form-wrap input[type="text"]:focus {
-	background: #FFFFFF;
+	background: #fff;
 	outline: 2px solid #E5E5E5;
 }
 input[type="text"]::placeholder {
@@ -415,7 +423,7 @@ input[type="text"]::placeholder {
 	position: absolute;
 	width: 21px;
 	height: 23px;
-	background: url(images/calendar.svg) no-repeat;
+	background: url(../images/calendar.svg) no-repeat;
 	right: 65px;
 	top: 62px;
 	border: none;
@@ -426,7 +434,7 @@ input[type="text"]::placeholder {
 	position: absolute;
 	width: 21px;
 	height: 23px;
-	background: url(images/calendar.svg) no-repeat;
+	background: url(../images/calendar.svg) no-repeat;
 	right: 65px;
 	top: 131px;
 	border: none;
@@ -434,16 +442,16 @@ input[type="text"]::placeholder {
 	cursor: pointer;
 }
 .claendar-one:hover {
-	background: url(images/calendar-hover.svg);
+	background: url(../images/calendar-hover.svg);
 }
 .claendar-two:hover {
-	background: url(images/calendar-hover.svg);
+	background: url(../images/calendar-hover.svg);
 }
 .claendar-one:active {
-	background: url(images/calendar-active.svg);
+	background: url(../images/calendar-active.svg);
 }
 .claendar-two:active {
-	background: url(images/calendar-active.svg);
+	background: url(../images/calendar-active.svg);
 }
 
 .form-wrap input[type="number"] {
@@ -502,22 +510,22 @@ input[type="number"]:focus {
 .minus {
 	align-self: center;
 	justify-self: center;
-	background: url("images/rectangle.svg")no-repeat;
+	background: url("../images/rectangle.svg")no-repeat;
 }
 .minus:hover {
-	background: url("images/rectangle-hover.svg")no-repeat;
+	background: url("../images/rectangle-hover.svg")no-repeat;
 }
 .minus:active {
-	background: url("images/rectangle-active.svg")no-repeat;
+	background: url("../images/rectangle-active.svg")no-repeat;
 }
 .plus {
-	background: url("images/union.svg")no-repeat;
+	background: url("../images/union.svg")no-repeat;
 }
 .plus:hover {
-	background: url("images/union-hover.svg")no-repeat;
+	background: url("../images/union-hover.svg")no-repeat;
 }
 .plus:active {
-	background: url("images/union-active.svg")no-repeat;
+	background: url("../images/union-active.svg")no-repeat;
 }
 .end-button-form {
 	grid-column: 1 / -1;
@@ -600,39 +608,39 @@ input[type="number"]:focus {
 	display: block;
 	width: 46px;
 	height: 48px;
-	background: url("images/Twitt.svg");
+	background: url("../images/Twitt.svg");
 }
 .twitt:hover {
 	width: 46px;
 	height: 48px;
-	background: url("images/twitt-hover.svg");
+	background: url("../images/twitt-hover.svg");
 }
 .twitt:active {
-	background: url("images/twitt-active.svg");
+	background: url("../images/twitt-active.svg");
 }
 .facebook {
 	display: block;
 	width: 46px;
 	height: 48px;
-	background: url("images/facebook.svg");
+	background: url("../images/facebook.svg");
 }
 .facebook:hover {
-	background: url("images/face-hover.svg");
+	background: url("../images/face-hover.svg");
 }
 .facebook:active {
-	background: url("images/face-active.svg");
+	background: url("../images/face-active.svg");
 }
 .youtube {
 	display: block;
 	width: 46px;
 	height: 48px;
-	background: url("images/youtube.svg");
+	background: url("../images/youtube.svg");
 }
 .youtube:hover {
-	background: url("images/youtube-hover.svg");
+	background: url("../images/youtube-hover.svg");
 }
 .youtube:active {
-	background: url("images/youtube-active.svg");
+	background: url("../images/youtube-active.svg");
 }
 .academy {
 	grid-column: 3 / 4;
@@ -649,13 +657,13 @@ input[type="number"]:focus {
 	display: block;
 	width: 115px;
 	height: 33px;
-	background: url(images/logo_htmlacademy.svg);
+	background: url(../images/logo_htmlacademy.svg);
 }
 .footer-logo:hover {
-	background: url("images/logo_htmlacademy_hover.svg");
+	background: url("../images/logo_htmlacademy_hover.svg");
 }
 .footer-logo:active {
-	background: url("images/logo_htmlacademy_active.svg");
+	background: url("../images/logo_htmlacademy_active.svg");
 }
 
 /* PAGE TWO */
@@ -668,7 +676,7 @@ input[type="number"]:focus {
 }
 .customization {
 	min-height: 217px;
-	background-image: url("images/background_two_page.jpg");
+	background-image: url("../images/background_two_page.jpg");
 	background-color: #4B4D4F;
 	
 }
@@ -723,10 +731,10 @@ input[type="number"]:focus {
 	width: 26px;
 	height: 23px;
 	border: none;
-	background: url("images/checkbox-on.svg")no-repeat;
+	background: url("../images/checkbox-on.svg")no-repeat;
 }
 .filter-input-chekbox:disabled:checked + label:before {
-	background: url("images/checkbox-disabled-on.svg")no-repeat;
+	background: url("../images/checkbox-disabled-on.svg")no-repeat;
 }
 
 .filter-input-chekbox:focus + label {
@@ -824,7 +832,7 @@ input[type="number"]:focus {
 	align-items: center;
 	width: 316px;
 	height: 36px;
-	border: 2px solid #FFFFFF;
+	border: 2px solid #fff;
 	border-radius: 2px;
 	background: 0;
 	margin-top: 10px;
@@ -859,7 +867,7 @@ input[type="number"]:focus {
 	line-height: 21px;
 	font-weight: normal;
 	text-transform: uppercase;
-	border: 2px solid #FFFFFF;
+	border: 2px solid #fff;
 	border-radius: 2px;
 	background: 0;
 	margin: 12px 28%;
@@ -917,26 +925,26 @@ input[type="number"]:focus {
 	cursor: pointer;
 }
 .image-up {
-	background: url("images/icon-up.svg")no-repeat;
+	background: url("../images/icon-up.svg")no-repeat;
 	width: 11px; 
 	height: 10px; 
 }
 .image-up:hover {
-	background: url("images/icon-up-hover.svg")no-repeat;
+	background: url("../images/icon-up-hover.svg")no-repeat;
 }
 .image-up:active {
-	background: url("images/icon-up-active.svg")no-repeat;
+	background: url("../images/icon-up-active.svg")no-repeat;
 }
 .image-down {
-	background: url("images/icon-down-active.svg")no-repeat;
+	background: url("../images/icon-down-active.svg")no-repeat;
 	width: 11px; 
 	height: 10px; 
 }
 .image-down:hover {
-	background: url("images/icon-down-hover.svg")no-repeat;
+	background: url("../images/icon-down-hover.svg")no-repeat;
 }
 .image-down:active {
-	background: url("images/icon-down-active.svg")no-repeat;
+	background: url("../images/icon-down-active.svg")no-repeat;
 }
 
 /* RESULT */
