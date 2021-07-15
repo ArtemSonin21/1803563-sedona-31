@@ -15,3 +15,7 @@ form.addEventListener("submit", function (evt) {
 		popup.classList.toggle("modal-error");
 	}
 });
+
+window.onload = function(evt) {
+	popup.classList.add("form-serch-animation");
+};
