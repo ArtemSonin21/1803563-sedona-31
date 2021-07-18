@@ -15,16 +15,15 @@
           <a class="header-logo" href="index.html"><img src="images/logo.svg" width="138" height="70" alt="Логотип города Седона">
           </a>
          <ul class="site-navigation">
-            <li><a href="blank.html">Информация</a></li>
-            <li class="left"><a href="blank.html">Фото и видео</a></li>
+            <li class="left"><a href="blank.html">Информация</a></li>
+            <li class="left-two"><a href="blank.html">Фото и видео</a></li>
             <li class="right"><a href="blank.html">Карта штата</a></li>
-            <li><a href="blank.html" style="color: #766357;">Гостиницы</a></li>
+            <li class="right-two"><a class="active-menu-item" href="blank.html">Гостиницы</a></li>
           </ul>
       </nav>
     </header>
 
     <main class="main-two">
-
       <section class="customization">
         <form class="header-form" action="https://echo.htmlacademy.ru/">
           <fieldset class="first-form">
@@ -50,10 +49,10 @@
             <fieldset class="price-range">
               <legend>Стоимость в сутки, ₽:</legend>
               <div class="price-controls">
-                <label>от<input type="number" name="min-price-slider" value="0">
+                <label for="min-price-slider">от<input type="number" name="min-price-slider" id="min-price-slider" value="0">
                 </label>
                 <div class="demarcation-line"></div>
-                <label>до<input type="number" name="max-price-slider" value="4000">
+                <label for="max-price-slider">до<input type="number" name="max-price-slider" id="max-price-slider" value="4000">
                 </label>
               </div>
 
@@ -80,7 +79,7 @@
         </div>
 
         <ul class="sorting">
-            <li><a href="blank.html" style="color: #81B3D2; border: 0;">По цене</a></li>
+            <li><a class="active-sorting-item" href="blank.html">По цене</a></li>
             <li><a href="blank.html">По типу</a></li>
             <li><a href="blank.html">По рейтингу</a></li>
         </ul>
@@ -141,7 +140,7 @@
             </div>
 
             <div class="result-rating">
-                <img class="stars-two" src="images/three-stars.svg" width="91" height="17" alt="четыре звезды">
+                <img class="stars-two" src="images/three-stars.svg" width="91" height="17" alt="три звезды">
                 <p class="rating">Рейтинг: 8,9</p>
             </div>
           </li>

@@ -16,7 +16,10 @@
 	--basic-dark-input: #EBEBEB;
 	--background-color-map: #D8E4BE;
 	--basic-toggle-color: #ABABAB;
+	--basic-range-color: #808080;
 	--basic-result-color: #666;
+	--basic-background-color-two-page: #4B4D4F;
+	--basic-disabled-chekbox: #6A6A6A;
 	--box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
 }
 
@@ -74,32 +77,25 @@ body {
 	line-height: 26px;
 	font-weight: bold;
 	background-color: var(--basic-white);
-	
 }
 .header-logo {
 	position: absolute;
 	left: 533px;
 	top: 0px;
-	z-index: 10;
+	z-index: 1;
 }
 .site-navigation {
-	display: flex;
-	justify-content:space-around;
-	flex-wrap: wrap;
+	display: grid;
+	grid-template-columns:  228px 200px 200px 200px 228px; 
 	list-style: none;
 	margin: 0;
-	padding: 12px 68px;
-	gap: 128px;
-	row-gap: normal;
+	padding: 13px 72px;
 }
-.site-navigation li:nth-chlid(1) {
-	text-align: left;
-}
-.site-navigation li:nth-chlid(4) {
-	text-align: right;
+.site-navigation li {
+	min-width: 110px;
 }
 .site-navigation a {
-	padding: 5px 5px;
+	position: relative;
 	text-decoration: none;
 	color: var(--basic-black);
 }
@@ -110,16 +106,29 @@ body {
 	color: var(--basic-black);
 	opacity: 30%; 
 }
-.site-navigation a:focus {
+.site-navigation .active-menu-item {
 	color: var(--basic-brown);
 }
+
 .left {
+	grid-column: 1 / 2;
 	text-align: left;
-	margin-right: 80px;
+	justify-self: start;
+}
+.left-two {
+	grid-column: 2 / 3;
+	text-align: left;
+	justify-self: start;
 }
 .right {
+	grid-column: 4 / 5;
 	text-align: right;
-	margin-left: 203px;
+	justify-self: end;
+}
+.right-two {
+	grid-column: 5 / 6;
+	text-align: right;
+	justify-self: end;
 }
 /* MAIN */
 .welcome {
@@ -193,7 +202,7 @@ body {
 	list-style: none;
 	margin: 0;
 	padding: 0;
-	padding-top: 56px;
+	padding-top: 60px;
 	padding-left: 11px;
 }
 .image-hous-icon {
@@ -214,14 +223,12 @@ body {
     padding: 0;
     margin-right: 65px;
     line-height: 21px;
-
 }
 .facilities-list h2 {
 	font-weight: bold;
 	font-size: 21px;
 	line-height: 21px;
 	padding: 83px 0 7px 0;
-
 }
 .reason-two {
 	grid-column: 1 / -1;
@@ -238,7 +245,6 @@ body {
 	text-align: center;
 	margin: auto 39px;
 }
-
 .reason-two h2 {
 	max-width: 151px;
 	margin: 0 auto;
@@ -247,7 +253,6 @@ body {
 	line-height: 21px;
 	padding-bottom: 18px;
 }
-
 .other-reasons {
 	grid-column: 1 / -1;
 	min-height: 256px;
@@ -264,7 +269,6 @@ body {
 .other-reasons-list li {
 	padding: 0 47px 0 54px;	
  }
-
 .other-reasons-list h2 {
 	padding: 0 85px;
 	font-weight: bold;
@@ -305,7 +309,6 @@ body {
 }
 .button:active {
 	background-color: var(--basic-dark-brow);
-
 }
 .button-serch {
 	display: block;
@@ -315,7 +318,6 @@ body {
 	color: var(--basic-white);
 	text-decoration: none;
 	padding: 30px;
-
 }
 .button-serch:active {
 	opacity: 30%;
@@ -326,7 +328,6 @@ body {
 	background: url("../images/map.png") no-repeat;
 	background-color: var(--background-color-map);
 }
-
 .form-serch {
 	position: absolute;
 	top: 0;
@@ -342,17 +343,13 @@ body {
 	visibility: visible;
 	transition: all 0.5s ease 0s;
 	transform: translate(0px, 0px);
-
 }
 .form-serch-animation {
 	display: block;
+	visibility: hidden;
 	opacity: 0;
 	transition: all 0.5s ease 0s;
 	transform: translate(0px, 20%);
-}
-.form-serch-hide {
-	visibility: hidden;
-
 }
 .form-wrap {
 	/*display: grid;
@@ -367,28 +364,23 @@ body {
 	margin: 0 auto;
 	padding-top: 50px;
 }
-
 .form-wrap label {
 	font-family: inherit;
 	font-style: normal;
 	font-weight: bold;
 	font-size: 14px;
 	line-height: 26px;
-	
-	
 }
 .check-in-date {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	margin-top: 5px;
-	
 }
 .check-out-date {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	
 }
 .form-wrap input {
 	position: relative;
@@ -406,9 +398,7 @@ body {
 	margin: 0;
 	padding-left: 10px;
 	padding-right: 40px;
-
 }
-
 .adult-children {
 	display: flex;
 	justify-content: space-between;
@@ -417,7 +407,7 @@ body {
 
 }
 /*.form-wrap input[type="text"] {
-	background: #F2F2F2 url("images/calendar.svg")no-repeat;
+	background: url("images/calendar.svg")no-repeat;
 	background-position: 317px 7px;
 	
 }*/
@@ -436,10 +426,13 @@ body {
 }
 .form-wrap input[type="text"]:focus {
 	background: var(--basic-white);
-	outline: 2px solid #E5E5E5;
+	outline: 2px solid var(--basic-border-input);
 }
 input[type="text"]::placeholder {
+	-webkit-color: var(--basic-black);
+	-moz-color: var(--basic-black);
 	color: var(--basic-black);
+	opacity: 1;
 }
 .claendar-one {
 	position: absolute;
@@ -475,7 +468,6 @@ input[type="text"]::placeholder {
 .claendar-two:active {
 	background: url(../images/calendar-active.svg);
 }
-
 .form-wrap input[type="number"] {
 	position: relative;
 	width: 114px;
@@ -497,7 +489,6 @@ input[type="number"]:focus {
     appearance: none;
     -moz-appearance: textfield;
 }
-
 .input-button {
 	position: absolute;
 	width: 94px;
@@ -571,7 +562,6 @@ input[type="number"]:focus {
 .end-button-form:active {
 	color: var(--basic-light-blue);
 	background-color: var(--basic-dark-blue);
-	
 }
 
 /* FOOTER */
@@ -594,7 +584,6 @@ input[type="number"]:focus {
 	flex-direction: column;
 	flex-wrap: wrap;
 	align-items: center;
-
 }
 .contacts a {
 	color: var(--basic-black);
@@ -630,7 +619,7 @@ input[type="number"]:focus {
 	display: block;
 	width: 46px;
 	height: 48px;
-	background: url("../images/Twitt.svg");
+	background: url("../images/twitt.svg");
 }
 .twitt:hover {
 	width: 46px;
@@ -673,19 +662,18 @@ input[type="number"]:focus {
 .academy p {
 	margin: 0;
 	padding: 6px 15px 0 0;
-	
 }
 .footer-logo {
 	display: block;
 	width: 115px;
 	height: 33px;
-	background: url(../images/logo_htmlacademy.svg);
+	background: url(../images/logo-htmlacademy.svg);
 }
 .footer-logo:hover {
-	background: url("../images/logo_htmlacademy_hover.svg");
+	background: url("../images/logo-htmlacademy-hover.svg");
 }
 .footer-logo:active {
-	background: url("../images/logo_htmlacademy_active.svg");
+	background: url("../images/logo-htmlacademy-active.svg");
 }
 
 /* PAGE TWO */
@@ -698,15 +686,13 @@ input[type="number"]:focus {
 }
 .customization {
 	min-height: 217px;
-	background-image: url("../images/background_two_page.jpg");
-	background-color: #4B4D4F;
-	
+	background-image: url("../images/background-two-page.jpg");
+	background-color: var(--basic-background-color-two-page);
 }
 .header-form {
 	display: grid;
 	grid-template-columns: 73px 253px 1fr 316px 73px;
 	color: var(--basic-white);
-	
 }
 .header-form h2 {
 	color: var(--basic-white);
@@ -738,12 +724,11 @@ input[type="number"]:focus {
 	left: 0;
 	width: 19px;
 	height: 19px;
-	border: 2px solid #fff;
+	border: 2px solid var(--basic-white);
 	border-radius: 3px;
 }
 .filter-input-chekbox:disabled + label:before {
-	border: 2px solid #6A6A6A;
-	
+	border: 2px solid var(--basic-disabled-chekbox);	
 }
 .filter-input-chekbox:checked + label:before {
 	content: "";
@@ -758,12 +743,11 @@ input[type="number"]:focus {
 .filter-input-chekbox:disabled:checked + label:before {
 	background: url("../images/checkbox-disabled-on.svg")no-repeat;
 }
-
 .filter-input-chekbox:focus + label {
 	outline: none;
 }
 .filter-input-chekbox:focus-visible + label {
-	outline: 2px solid #fff;
+	outline: 2px solid var(--basic-white);
 	outline-offset: 5px;
 }
 .second-form {
@@ -785,7 +769,6 @@ input[type="number"]:focus {
 .final {
 	grid-column: 4 / 5;	
 }
-
 .price-range {
 	display: flex;
 	flex-direction: column;
@@ -809,8 +792,7 @@ input[type="number"]:focus {
 }
 .range-controls .scale {
 	height: 2px;
-	background-color: #808080;
-	
+	background-color: var(--basic-range-color);
 }
 .range-controls .bar {
 	width: 80%;
@@ -825,12 +807,11 @@ input[type="number"]:focus {
 	height: 4px;
 	padding: 0;
 	background: var(--basic-toggle-color);
-	border: 8px solid #fff;
+	border: 8px solid var(--basic-white);
 	border-radius: 50%;
-	box-shadow: 0 2px  #ABABAB;
+	box-shadow: 0 2px  var(--basic-toggle-color);
 	cursor: pointer;
 }
-
 .range-controls .toggle-max {
 	left: 252px;
 }
@@ -839,14 +820,14 @@ input[type="number"]:focus {
 	left: -2px;
 	width: 6px;
 	height: 6px;
-	border: 11.5px solid #fff;
+	border: 11.5px solid var(--basic-white);
 }
 .toggle-max:hover {
 	top: -3px;
 	left: 250px;
 	width: 6px;
 	height: 6px;
-	border: 11.5px solid #fff;
+	border: 11.5px solid var(--basic-white);
 }
 .price-controls {
 	display: flex;
@@ -854,12 +835,11 @@ input[type="number"]:focus {
 	align-items: center;
 	width: 316px;
 	height: 36px;
-	border: 2px solid #fff;
+	border: 2px solid var(--basic-white);
 	border-radius: 2px;
 	background: 0;
 	margin-top: 10px;
 	margin-bottom: 10px;
-
 }
 .price-controls label {
 	padding: 0 45px;
@@ -878,7 +858,7 @@ input[type="number"]:focus {
 }
 .demarcation-line {
 	height: 22px;
-	border: 1px solid #fff;
+	border: 1px solid var(--basic-white);
 	background: var(--basic-white);
 }
 .show {
@@ -889,7 +869,7 @@ input[type="number"]:focus {
 	line-height: 21px;
 	font-weight: normal;
 	text-transform: uppercase;
-	border: 2px solid #fff;
+	border: 2px solid var(--basic-white);
 	border-radius: 2px;
 	background: 0;
 	margin: 12px 28%;
@@ -903,8 +883,7 @@ input[type="number"]:focus {
 	display: grid;
 	grid-template-columns: 73px 246px 270px 1fr 35px 73px;
 	height: 86px;
-	border-bottom: 1px solid #E5E5E5;
-	
+	border-bottom: 1px solid var(--basic-border-input);
 }
 .items {
 	grid-column: 2 / 3;
@@ -925,11 +904,9 @@ input[type="number"]:focus {
 .sorting a {
 	text-decoration: none;
 	color: var(--basic-toggle-color);
-}
-.sorting a {
 	font-size: 12px;
 	line-height: 18px;
-	border-bottom: 1px dashed #81B3D2;
+	border-bottom: 1px dashed var(--basic-blue);
 	cursor: pointer;
 }
 .sorting a:hover {
@@ -937,6 +914,10 @@ input[type="number"]:focus {
 }
 .sorting a:active {
 	color: var(--basic-black);
+	border: none;
+}
+.sorting .active-sorting-item {
+	color: var(--basic-blue); 
 	border: none;
 }
 .up-and-down {
@@ -979,7 +960,7 @@ input[type="number"]:focus {
 .result li {
 	padding: 23px 0 26px 0;
 	margin: 0;
-	border-bottom: 1px solid #E5E5E5;
+	border-bottom: 1px solid var(--basic-border-input);
 }
 .result p {
 	margin: 0;
@@ -1012,7 +993,6 @@ input[type="number"]:focus {
 	grid-column: 2 / 3;
 	padding-top: 6px;
 }
-
 .result-one-details {
 	grid-column: 3 / 4;
 	display: grid;
@@ -1116,7 +1096,6 @@ input[type="number"]:focus {
 	font-size: 14px;
 	line-height: 21px;
 	background-color: var(--basic-blue);
-	
 }
 .detail-button:hover {
 	background-color: var(--basic-extra-blue);
@@ -1149,7 +1128,6 @@ input[type="number"]:focus {
 	font-size: 14px;
 	line-height: 21px;
 	background-color: var(--basic-brown);
-	
 }
 .reservation-button-text {
 	display: block;
