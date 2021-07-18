@@ -619,7 +619,7 @@ input[type="number"]:focus {
 	display: block;
 	width: 46px;
 	height: 48px;
-	background: url("../images/twitt.svg");
+	background: url("../images/twitt-icon.svg");
 }
 .twitt:hover {
 	width: 46px;
@@ -645,7 +645,7 @@ input[type="number"]:focus {
 	display: block;
 	width: 46px;
 	height: 48px;
-	background: url("../images/youtube.svg");
+	background: url("../images/youtube-icon.svg");
 }
 .youtube:hover {
 	background: url("../images/youtube-hover.svg");
