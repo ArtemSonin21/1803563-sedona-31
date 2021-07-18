@@ -135,7 +135,7 @@ body {
 	position: relative;
 	width: 1200px;
 	height: 510px;
-	background: url("../images/background.jpg") no-repeat;
+	background: url("../images/background-first-page.png") no-repeat;
 	background-color: var(--background-no-image-color);
 }
 .shape {
@@ -523,22 +523,22 @@ input[type="number"]:focus {
 .minus {
 	align-self: center;
 	justify-self: center;
-	background: url("../images/rectangle.svg")no-repeat;
+	background: url("../images/minus.svg")no-repeat;
 }
 .minus:hover {
-	background: url("../images/rectangle-hover.svg")no-repeat;
+	background: url("../images/minus-hover.svg")no-repeat;
 }
 .minus:active {
-	background: url("../images/rectangle-active.svg")no-repeat;
+	background: url("../images/minus-active.svg")no-repeat;
 }
 .plus {
-	background: url("../images/union.svg")no-repeat;
+	background: url("../images/plus.svg")no-repeat;
 }
 .plus:hover {
-	background: url("../images/union-hover.svg")no-repeat;
+	background: url("../images/plus-hover.svg")no-repeat;
 }
 .plus:active {
-	background: url("../images/union-active.svg")no-repeat;
+	background: url("../images/plus-active.svg")no-repeat;
 }
 .end-button-form {
 	grid-column: 1 / -1;
